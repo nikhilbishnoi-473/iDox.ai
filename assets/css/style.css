@@ -268,7 +268,6 @@
     height: 64px;
     border-radius: 8px;
     background: var(--small-box);
-
 }
 
 .posu_ere {
@@ -293,14 +292,37 @@
 .mt-10{
     margin-top: 10px;
 }
-
-
-
-
-
-
-
-
+.pt-102{
+    padding-top: 102px;
+}
+.small_box_2{
+    max-width: 400px;
+    border-radius:  10px;
+    padding: 13.87px 0px 13.87px 16px;
+    background:var(--position-box);
+}
+.box_circle{
+    height: 52px;
+    width: 51px;
+background: var(--position-box);
+border-radius: 26px;
+}
+.gap-14{
+    gap: 14px;
+}
+.mt-44{
+    margin-top: 44px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.pb-177{
+    padding-bottom: 177px;
+}
+.pt-17{
+    padding-top: 17px;
+}
+ 
 
 
 
