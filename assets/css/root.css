@@ -47,6 +47,10 @@
     --blue-1: #0389FF;
     --input-bg: #FBFDFF12;
     --position-box: #0389FF1F;
+    --small-box: #0389FF1A;
+}
+.small-box{
+    color: var(--small-box);
 }
  .position-box{
     color: var(--position-box);
