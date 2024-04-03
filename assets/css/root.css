@@ -48,22 +48,54 @@
     --input-bg: #FBFDFF12;
     --position-box: #0389FF1F;
     --small-box: #0389FF1A;
+    --box-4: #0389FF1F;
+    --border-color: #FFFFFF1A;
+    --box-small: #011321;
+    --box-text: #FBFDFF;
+    --border-color_1: #0389FF;
+    --circle-border: #0389FF33;
 }
-.small-box{
+.circle-border{
+    color: var(--circle-border);
+}
+.border-color_1{
+    color: var(--border-color_1);
+}
+.box-text{
+    color: var(--box-text);
+}
+.box-small {
+    color: var(--box-small);
+}
+
+.border-color {
+    color: var(--border-color);
+}
+
+.box-4 {
+    color: var(--box-4)
+}
+
+.small-box {
     color: var(--small-box);
 }
- .position-box{
+
+.position-box {
     color: var(--position-box);
- }
-.input_bg{
+}
+
+.input_bg {
     color: var(--input-bg);
 }
-.blue-1{
+
+.blue-1 {
     color: var(--blue-1);
 }
-.shadow-color{
-color: var(--shadow-color);
+
+.shadow-color {
+    color: var(--shadow-color);
 }
+
 .fw-300 {
     font-weight: var(--fw-300);
 }
@@ -98,6 +130,10 @@ color: var(--shadow-color);
 
 .roboto {
     font-family: 'Roboto', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
 }
 
 .white {
