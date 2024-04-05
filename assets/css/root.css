@@ -55,11 +55,13 @@
     --border-color_1: #0389FF;
     --circle-border: #0389FF33;
     --border-img: #273239;
---footer_bg: #021728;
+    --footer_bg: #021728;
 }
-.footer_bg{
+
+.footer_bg {
     color: var(--footer_bg);
 }
+
 .border-img {
     color: var(--border-img);
 }

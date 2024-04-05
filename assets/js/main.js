@@ -47,7 +47,7 @@ $('.responsive_2').slick({
   dots: true,
   infinite: false,
   speed: 300,
-  arrow: false,
+  arrows: false,
   autoplay: false,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -58,7 +58,6 @@ $('.responsive_2').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        arrow: false,
          
       }
     },
@@ -67,15 +66,13 @@ $('.responsive_2').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrow: false,
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
-        , arrow: false,
+        slidesToScroll: 1, 
       }
     }
   
