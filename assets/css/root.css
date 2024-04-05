@@ -54,16 +54,28 @@
     --box-text: #FBFDFF;
     --border-color_1: #0389FF;
     --circle-border: #0389FF33;
+    --border-img: #273239;
+--footer_bg: #021728;
 }
-.circle-border{
+.footer_bg{
+    color: var(--footer_bg);
+}
+.border-img {
+    color: var(--border-img);
+}
+
+.circle-border {
     color: var(--circle-border);
 }
-.border-color_1{
+
+.border-color_1 {
     color: var(--border-color_1);
 }
-.box-text{
+
+.box-text {
     color: var(--box-text);
 }
+
 .box-small {
     color: var(--box-small);
 }
@@ -262,4 +274,15 @@
 
 .line-60 {
     line-height: var(--line-60);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --fs-44: 26px;
+        --line-55: 36px;
+        --line-27: 23px;
+        --fs-18: 15px;
+        --fs-48: 27px;
+        --line-60: 40px;
+    }
 }
