@@ -290,7 +290,7 @@ box-shadow: 0px 4px 32px 0px var(--shadow-color);
     padding: 17px 58px 35px 15px;
     transition: all 400ms linear;
 }
-.box_1:hover{
+.box_1:hover  {
     box-shadow: 0px 0px 10px 0px var(--blue-1);
 }
 .small_box {
@@ -298,8 +298,14 @@ box-shadow: 0px 4px 32px 0px var(--shadow-color);
     height: 64px;
     border-radius: 8px;
     background: var(--small-box);
+    transition: all 400ms linear;
 }
-
+.box_1:hover .small_box {
+    box-shadow: 0px 0px 10px 0px var(--blue-1);
+    .transition_scale{
+        transform: scale(1.1);
+    }
+}
 .posu_ere {
     max-width: 370px;
 }
@@ -341,10 +347,11 @@ box-shadow: 0px 4px 32px 0px var(--shadow-color);
 }
 .small_box_2:hover{
     box-shadow: 0px 0px 10px 0px var(--white);
+    .transition_scale{
+        transform: scale(1.1);
+    }
 }
-.transition_scale:hover{
-    transform: scale(1.1);
-}
+ 
 
 .box_circle {
     height: 52px;
@@ -411,11 +418,18 @@ box-shadow: 0px 4px 32px 0px var(--shadow-color);
 .btn_learn {
     border: 0;
     background: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58) -14.36%, #0069E3 113.71%);
-    box-shadow: 0px 4px 32px 0px #2746ED80;
     padding: 13px 32px;
     max-width: 150px;
     border-radius: 40px;
+    transition: all 400ms linear;
 }
+.btn_learn:hover{
+    color: var(--blue-1);
+    background: var(--white);
+    transform: scale(1);
+    box-shadow: 0px 4px 32px 0px var(--shadow-color);
+    }
+    
 
 .pt-77 {
     padding-top: 77px;
@@ -738,7 +752,15 @@ box-shadow: 0px 4px 32px 0px var(--shadow-color);
     border-radius: 40px;
     background: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58) -14.36%, #0069E3 113.71%);
     border: 0;
+    transition: all 400ms linear;
 }
+.btn_try:hover{
+    color: var(--blue-1);
+    background: var(--white);
+    transform: scale(1);
+    box-shadow: 0px 4px 32px 0px var(--shadow-color);
+    }
+    
 
 .pt-76 {
     padding-top: 76px;
@@ -812,14 +834,7 @@ box-shadow: 0px 4px 32px 0px var(--shadow-color);
     padding-top: 8px;
 }
 
-.btn_learn {
-    max-width: 150px;
-    background: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58) -14.36%, #0069E3 113.71%);
-    box-shadow: 0px 4px 32px 0px #2746ED80;
-    padding: 13px 32px;
-    border-radius: 40px;
-}
-
+ 
 .pt-121 {
     padding-top: 121px;
 }
@@ -1030,7 +1045,9 @@ box-shadow: 0px 4px 32px 0px var(--shadow-color);
 .underline:hover::after {
     width: 100%;
 }
-
+.ellips_1{
+    
+}
 
 
 
