@@ -892,7 +892,7 @@
 }
 
 .padding_8 {
-    padding: 64.04px 14.53px 65.88px 49.14px;
+    padding: 64.04px 13.53px 65.88px 48.14px;
 }
 
 .border_r {
@@ -1294,6 +1294,9 @@
 
     .gap-150 {
         gap: 20px;
+    }
+    .position_circle{
+        right: -10px;
     }
 }
 
