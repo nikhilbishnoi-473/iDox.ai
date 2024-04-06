@@ -1,14 +1,14 @@
 function openNav() {
-    document.getElementById("navbar").classList.toggle("start-0");
-    document.body.classList.toggle("overflow_hidden");
-    document.querySelector(".menu").classList.toggle("cross")
+  document.getElementById("navbar").classList.toggle("start-0");
+  document.body.classList.toggle("overflow_hidden");
+  document.querySelector(".menu").classList.toggle("cross")
 }
 
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -35,12 +35,12 @@ $('.responsive').slick({
   speed: 1000,
   pauseOnHover: true,
   cssEase: 'linear',
-    responsive: [
-     
-    
-    ]
-  });
-  
+  responsive: [
+
+
+  ]
+});
+
 $('.responsive_2').slick({
   dots: true,
   infinite: false,
@@ -59,7 +59,7 @@ $('.responsive_2').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-         
+
       }
     },
     {
@@ -73,21 +73,21 @@ $('.responsive_2').slick({
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1, 
+        slidesToScroll: 1,
       }
     }
-  
+
   ]
 });
-     
 
- 
+
+
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("load", function () {
     setTimeout(function () {
       let loadingOverlay = document.getElementById("loadingOverlay");
       loadingOverlay.style.display = "none";
       document.querySelector("body").classList.remove("overflow_hidden");
-    },3000);
+    }, 3000);
   });
 });
