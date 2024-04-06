@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="./assets/image/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/image/svg/favicon.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,6 +18,17 @@
 </head>
 
 <body>
+    <div class="loading-overlay " id="loadingOverlay">
+        <div class="d-flex  justify-content-between gap-5 my-5">
+          <div class="d-none d-sm-block">
+            <img src="./assets/image/logo.png" alt="logo">
+          </div>
+            <div class="d-flex  flex-column justify-content-center align-items-center">
+                <div id="loader"></div>
+    
+            </div>
+        </div>
+    </div>
     <section class="  bg_img d- none position-relative">
         <div class="nav-box d-flex   bg_color_1   align-items-center   ">
             <div class="container    max-w-1350  ">
@@ -120,19 +131,21 @@
                 <div class="col-lg-6 col-12 d-flex justify-content-center">
                     <img class="w-100 cursor max-width_1" src="./assets/image/alimg.png" alt="image">
                 </div>
-                <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-lg-center justify-content-center">
+                <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-lg-center align-items-center text-center text-lg-start justify-content-center">
                     <div class="d-flex flex-column">
                         <h3 class="jakar-f fw-500 fs-44 line-55 mb-0  white compli_ance">Compliance Security Trust</h3>
                         <p class="jakar-f white compli_ance fw-400 op-70 fs-16 line-27 mb-0 pt-8">Posuere ultrices
                             aliquet
                             risus
                             malesuada viverra nec praesent. Sed nisl facilisi augue.</p>
-                        <button class="fw-600 fs-16 line-27 jakar-f white btn_4 mt-28">Watch Demo Video</button>
+                        <div class="mt-28">
+                            <button class="fw-600 fs-16 line-27 jakar-f white btn_4  ">Watch Demo Video</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row pt-102 pb-177">
-                <div class="col-lg-6 col-12 z-3  d-flex   align-items-lg-center justify-content-center">
+                <div class="col-lg-6 col-12 z-3  d-flex  text-center text-lg-start align-items-lg-center  justify-content-center">
                     <div class="d-flex flex-column">
                         <h3 class="jakar-f z-3 fw-500 fs-44 line-55 mb-0  white compli_ance">How we can help?</h3>
                         <p class="jakar-f z-3 op-70 white compli_ance fw-400 fs-16 line-27 mb-0 pt-8">Whether you handle
@@ -141,7 +154,9 @@
                             human error, combat time sensitive redaction requests, avoid costly penalties at a fraction
                             of
                             the price.</p>
-                        <button class="fw-600 z-3 fs-16 line-27 jakar-f white btn_4 mt-28">watch demo video</button>
+                        <div class=" mt-28">
+                            <button class="fw-600 z-3 fs-16 line-27 jakar-f white btn_4 ">watch demo video</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 pt--20 col-12 d-flex justify-content-lg-end justify-content-center">
@@ -232,58 +247,62 @@
         <div class="d-flex justify-content-center pt-130">
             <h2 class="jakar-f fw-500 z-3 fs-44 line-55 mb-0 white">Testimonials</h2>
         </div>
-       <div class="overflow-hidden">
-        <div class="mt-46 responsive_2  z-3 pb-42 ">
-            <div class="slider_box  ">
-                <div class="d-flex justify-content-center">
-                    <img class="z-3 cursor" src="./assets/image/imagen.png" alt="image">
-                </div>
-                <p class="jakar-f z-3 fw-400 fs-20 line-30 mb-0 white fst-italic quick_well pt-13">“Quick, well designed,
-                    and saved our team over 97% of time. Our team was able to meet subject access
-                    requests and meet GDPR mandates using the iDox.ai redaction solution.”</p>
-                <div class="d-flex justify-content-center">
-                    <h3 class="jakar-f z-3 fw-400 line-19 fst-italic fs-14  white mb-0 pt-46">Carl Bevan</h3>
-                </div>
+        <div class="overflow-hidden">
+            <div class="mt-46 responsive_2  z-3 pb-42 ">
+                <div class="slider_box  ">
+                    <div class="d-flex justify-content-center">
+                        <img class="z-3 cursor" src="./assets/image/imagen.png" alt="image">
+                    </div>
+                    <p class="jakar-f text-center z-3 fw-400 fs-20 line-30 mb-0 white fst-italic quick_well pt-13">
+                        “Quick, well designed,
+                        and saved our team over 97% of time. Our team was able to meet subject access
+                        requests and meet GDPR mandates using the iDox.ai redaction solution.”</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="jakar-f z-3 fw-400 line-19 fst-italic fs-14  white mb-0 pt-46">Carl Bevan</h3>
+                    </div>
 
-            </div>
-            <div class="slider_box  ">
-                <div class="d-flex justify-content-center">
-                    <img class="z-3 cursor" src="./assets/image/imagen.png" alt="image">
                 </div>
-                <p class="jakar-f z-3 fw-400 fs-20 line-30 mb-0 white fst-italic quick_well pt-13">“Quick, well designed,
-                    and saved our team over 97% of time. Our team was able to meet subject access
-                    requests and meet GDPR mandates using the iDox.ai redaction solution.”</p>
-                <div class="d-flex justify-content-center">
-                    <h3 class="jakar-f z-3 fw-400 line-19 fst-italic fs-14  white mb-0 pt-46">Carl Bevan</h3>
-                </div>
+                <div class="slider_box  ">
+                    <div class="d-flex justify-content-center">
+                        <img class="z-3 cursor" src="./assets/image/imagen.png" alt="image">
+                    </div>
+                    <p class="jakar-f text-center z-3 fw-400 fs-20 line-30 mb-0 white fst-italic quick_well pt-13">
+                        “Quick, well designed,
+                        and saved our team over 97% of time. Our team was able to meet subject access
+                        requests and meet GDPR mandates using the iDox.ai redaction solution.”</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="jakar-f z-3 fw-400 line-19 fst-italic fs-14  white mb-0 pt-46">Carl Bevan</h3>
+                    </div>
 
-            </div>
-            <div class="slider_box  ">
-                <div class="d-flex justify-content-center">
-                    <img class="z-3 cursor" src="./assets/image/imagen.png" alt="image">
                 </div>
-                <p class="jakar-f z-3 fw-400 fs-20 line-30 mb-0 white fst-italic quick_well pt-13">“Quick, well designed,
-                    and saved our team over 97% of time. Our team was able to meet subject access
-                    requests and meet GDPR mandates using the iDox.ai redaction solution.”</p>
-                <div class="d-flex justify-content-center">
-                    <h3 class="jakar-f z-3 fw-400 line-19 fst-italic fs-14  white mb-0 pt-46">Carl Bevan</h3>
-                </div>
+                <div class="slider_box  ">
+                    <div class="d-flex justify-content-center">
+                        <img class="z-3 cursor" src="./assets/image/imagen.png" alt="image">
+                    </div>
+                    <p class="jakar-f text-center z-3 fw-400 fs-20 line-30 mb-0 white fst-italic quick_well pt-13">
+                        “Quick, well designed,
+                        and saved our team over 97% of time. Our team was able to meet subject access
+                        requests and meet GDPR mandates using the iDox.ai redaction solution.”</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="jakar-f z-3 fw-400 line-19 fst-italic fs-14  white mb-0 pt-46">Carl Bevan</h3>
+                    </div>
 
-            </div>
-            <div class="slider_box  ">
-                <div class="d-flex justify-content-center">
-                    <img class="z-3 cursor" src="./assets/image/imagen.png" alt="image">
                 </div>
-                <p class="jakar-f z-3 fw-400 fs-20 line-30 mb-0 white fst-italic quick_well pt-13">“Quick, well designed,
-                    and saved our team over 97% of time. Our team was able to meet subject access
-                    requests and meet GDPR mandates using the iDox.ai redaction solution.”</p>
-                <div class="d-flex justify-content-center">
-                    <h3 class="jakar-f z-3 fw-400 line-19 fst-italic fs-14  white mb-0 pt-46">Carl Bevan</h3>
-                </div>
+                <div class="slider_box  ">
+                    <div class="d-flex justify-content-center">
+                        <img class="z-3 cursor" src="./assets/image/imagen.png" alt="image">
+                    </div>
+                    <p class="jakar-f text-center z-3 fw-400 fs-20 line-30 mb-0 white fst-italic quick_well pt-13">
+                        “Quick, well designed,
+                        and saved our team over 97% of time. Our team was able to meet subject access
+                        requests and meet GDPR mandates using the iDox.ai redaction solution.”</p>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="jakar-f z-3 fw-400 line-19 fst-italic fs-14  white mb-0 pt-46">Carl Bevan</h3>
+                    </div>
 
+                </div>
             </div>
         </div>
-       </div>
         <div class="ellips_5 d-none d-lg-block position-absolute z-0">
             <img src="./assets/image/svg/ellips_5.svg" alt="svg">
         </div>
@@ -296,7 +315,8 @@
                 </div>
                 <div class="col-lg-6 col-12 d-flex align-items-lg-center justify-content-lg-end justify-content-center">
                     <div class=" d-flex flex-column">
-                        <h3 class="jakar-f fw-500 z-3 fs-44 line-55 mb-0 white we_proide">We provide secure solutions</h3>
+                        <h3 class="jakar-f fw-500 z-3 fs-44 line-55 mb-0 white we_proide">We provide secure solutions
+                        </h3>
                         <p class=" we_proide z-3 op-70 fw-400 jakar-f fs-16 line-27 white pt-8 mb-0">For nationwide and
                             global teams, our cloud-based solutions keep everyone on the same page, all backed by our
                             SOC 2 and ISO 27001 certifications.</p>
@@ -307,7 +327,8 @@
             <div class="d-flex justify-content-center text-center pt-130">
                 <div class="d-flex flex-column">
                     <h3 class="jakar-f fw-500 fs-44 line-55 mb-0 white z-3">How it works</h3>
-                    <h4 class="jakar-f fw-400 fs-16 line-27 mb-0 white z-3 op-70 pt-8">Only 2 minutes redacting a 10 page
+                    <h4 class="jakar-f fw-400 fs-16 line-27 mb-0 white z-3 op-70 pt-8">Only 2 minutes redacting a 10
+                        page
                         document</h4>
                 </div>
             </div>
@@ -322,7 +343,8 @@
                                     <div class="d-flex justify-content-center">
                                         <img class="z-3" src="./assets/image/svg/svg1.svg" alt="svg">
                                     </div>
-                                    <h4 class="poppins z-3 fw-500 fs-10 line-15 mb-0 box-text pt-10">Drop or click to select
+                                    <h4 class="poppins z-3 fw-500 fs-10 line-15 mb-0 box-text pt-10">Drop or click to
+                                        select
                                         a file</h4>
                                     <div class="d-flex justify-content-center">
                                         <button
@@ -388,10 +410,12 @@
                                 <h6 class="poppins z-3 fw-600 fs-12 text-nowrap pt-8 line-18 white mb-0 ">Sample Medical
                                     Record: Mo</h6>
                                 <h3 class="poppins z-3 fw-400 fs-9 line-13 mb-0 white op-70 pt-7">Previous Page</h3>
-                                <h4 class="poppins z-3 fw-400 fs-9 line-13 mb-0 white mt_4 text_bg">Table of Contents</h4>
+                                <h4 class="poppins z-3 fw-400 fs-9 line-13 mb-0 white mt_4 text_bg">Table of Contents
+                                </h4>
                                 <h5 class="poppins z-3 fw-400 mt-7 pt-8 fs-9 line-13 mb-0 white ">Use for <span
                                         class="text_bg_2">April 2011</span> abstraction</h5>
-                                <h4 class="poppins z-3 fw-400 fs-9 line-13 mb-0 white mt_4 text_bg_3 mt-7">WeServeEveryone
+                                <h4 class="poppins z-3 fw-400 fs-9 line-13 mb-0 white mt_4 text_bg_3 mt-7">
+                                    WeServeEveryone
                                     Clinic</h4>
                                 <h3 class="poppins z-3 fw-400 fs-9 line-13 mb-0 white op-70 pt-7">1111 First Street
                                     California</h3>
@@ -410,13 +434,16 @@
                         <div class="box_4 position-relative">
                             <div class="center_box_3">
                                 <h3 class="poppins z-3 fw-600 fs-16 line-24 mb-0 white ">Practice Facilitation</h3>
-                                <h6 class="poppins z-3  fw-600 fs-12 text-nowrap pt-8 line-18 white mb-0 ">Sample Medical
+                                <h6 class="poppins z-3  fw-600 fs-12 text-nowrap pt-8 line-18 white mb-0 ">Sample
+                                    Medical
                                     Record: Mo</h6>
                                 <h3 class="poppins z-3  fw-400 fs-9 line-13 mb-0 white op-70 pt-7">Previous Page</h3>
-                                <h4 class="poppins z-3  fw-400 fs-9 line-13 mb-0 black mt_4 text_bg_1">Table of Contents</h4>
+                                <h4 class="poppins z-3  fw-400 fs-9 line-13 mb-0 black mt_4 text_bg_1">Table of Contents
+                                </h4>
                                 <h5 class="poppins z-3  fw-400 mt-7 pt-8 fs-9 line-13 mb-0 white ">Use for <span
                                         class="text_bg_2_1 black">April 2011</span> abstraction</h5>
-                                <h4 class="poppins  z-3 fw-400 fs-9 line-13 mb-0 black mt_4 text_bg_3_1 mt-7">WeServeEveryone
+                                <h4 class="poppins  z-3 fw-400 fs-9 line-13 mb-0 black mt_4 text_bg_3_1 mt-7">
+                                    WeServeEveryone
                                     Clinic</h4>
                                 <h3 class="poppins  z-3 fw-400 fs-9 line-13 mb-0 white op-70 pt-7">1111 First Street
                                     California</h3>
@@ -478,7 +505,8 @@
                         <img class=" " src="./assets/image/box.png" alt="googledrive">
                     </div>
                 </div>
-                <div class="col-lg-3 z-3 col-sm-6 d-flex justify-content-center align-items-center hover_effect   border_b">
+                <div
+                    class="col-lg-3 z-3 col-sm-6 d-flex justify-content-center align-items-center hover_effect   border_b">
                     <div class="padding_net  d-flex justify-content-center align-items-center ">
                         <img class=" " src="./assets/image/netdocuments.png" alt="googledrive">
                     </div>
@@ -495,12 +523,14 @@
                         <img class=" " src="./assets/image/image6.png" alt="googledrive">
                     </div>
                 </div>
-                <div class="col-lg-3 z-3 col-sm-6 d-flex justify-content-center align-items-center hover_effect border_r  ">
+                <div
+                    class="col-lg-3 z-3 col-sm-6 d-flex justify-content-center align-items-center hover_effect border_r  ">
                     <div class="padding_7  d-flex justify-content-center align-items-center ">
                         <img class="w-100 " src="./assets/image/image7.png" alt="googledrive">
                     </div>
                 </div>
-                <div class="col-lg-3 z-3  col-sm-6 d-flex justify-content-center align-items-center hover_effect border_t">
+                <div
+                    class="col-lg-3 z-3  col-sm-6 d-flex justify-content-center align-items-center hover_effect border_t">
                     <div class="padding_8  d-flex justify-content-center align-items-center ">
                         <img class=" " src="./assets/image/image8.png" alt="googledrive">
                     </div>
@@ -511,20 +541,24 @@
         <div class="position-absolute d-none d-lg-block ellip_9 z-0">
             <img src="./assets/image/svg/ellips_9.svg" alt="svg">
         </div>
-        
+
     </section>
     <section class="bg_color_2 position-relative d- none mt--2">
         <div class="container max-w-1140">
             <div class="row pt-121 ">
-                <div class="col-lg-6 col-12 d-flex justify-content-center   align-items-lg-center">
+                <div class="col-lg-6 col-12 d-flex justify-content-center text-lg-start  text-center align-items-lg-center">
                     <div class="d-flex flex-column ">
-                        <h3 class="jakar-f fs-44 line-55 mb-0 white z-3 acceler_ate">Accelerate Your Enterprise’s Document
+                        <h3 class="jakar-f fs-44 line-55 mb-0 white z-3 acceler_ate">Accelerate Your Enterprise’s
+                            Document
                             Redaction Efforts</h3>
-                        <p class="jakar-f white op-70 fw-400 z-3 fs-16 line-27 para_3 mb-0 pt-8">As your team carries out
+                        <p class="jakar-f white op-70 fw-400 z-3 fs-16 line-27 para_3 mb-0 pt-8">As your team carries
+                            out
                             time-intensive manual redaction processes, there’s a trade-off between security and
                             efficiency.
                             iDox.ai Redact offers the best of both worlds with thorough, automatic redactions.</p>
-                        <button class="jakar-f z-3 fw-600 fs-16 line-27 white btn_learn mt-28">learn more</button>
+                        <div class="mt-28">
+                            <button class="jakar-f z-3 fw-600 fs-16 line-27 white btn_learn  ">learn more</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 d-flex justify-content-center">
@@ -550,11 +584,12 @@
                                 <h3 class="jakar-f z-3 mb-0 fw-500 fs-20 line-28 box-text ">7 Days</h3>
                             </div>
                         </div>
-                        <div class="p_box d-flex justify-content-center">
+                        <div class="p_box d-flex justify-content-center  ">
                             <div class="d-flex flex-column">
                                 <div class="d-flex gap-23 align-items-center">
                                     <img class="z-3" src="./assets/image/circle_right.png" alt="circle">
-                                    <h4 class="jakar-f z-3 fw-400 fs-14 line-25 mb-0 box-text ">50 pages analysis ( 7 days )
+                                    <h4 class="jakar-f z-3 fw-400 fs-14 line-25 mb-0 box-text ">50 pages analysis ( 7
+                                        days )
                                     </h4>
                                 </div>
                                 <div class="d-flex pt-20 gap-23 align-items-center">
@@ -563,7 +598,8 @@
                                 </div>
                                 <div class="d-flex pt-20 gap-23 align-items-center">
                                     <img class="z-3" src="./assets/image/circle_right.png" alt="circle">
-                                    <h4 class="jakar-f  z-3 fw-400 fs-14 line-25 mb-0 box-text ">After 7 day, auto renews
+                                    <h4 class="jakar-f  z-3 fw-400 fs-14 line-25 mb-0 box-text ">After 7 day, auto
+                                        renews
                                         plan</h4>
                                 </div>
                                 <div class="d-flex  justify-content-center">
@@ -572,7 +608,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-none d-lg-block z-0 position-absolute  elips_11"> 
+                        <div class="d-none d-lg-block z-0 position-absolute  elips_11">
                             <img class="w-100" src="./assets/image/svg/elips_11.svg" alt="svg">
                         </div>
                     </div>
@@ -607,7 +643,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-none d-lg-block z-0 position-absolute  elips_11"> 
+                        <div class="d-none d-lg-block z-0 position-absolute  elips_11">
                             <img class="w-100" src="./assets/image/svg/elips_11.svg" alt="svg">
                         </div>
                     </div>
@@ -642,14 +678,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-none d-lg-block z-0 position-absolute  elips_11"> 
+                        <div class="d-none d-lg-block z-0 position-absolute  elips_11">
                             <img class="w-100" src="./assets/image/svg/elips_11.svg" alt="svg">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-       
+
     </section>
     <section class="bg-img-2 d- none position-relative mt--2">
         <div class="container max-w-1140">
@@ -666,11 +702,11 @@
             </div>
             <div class="d-flex justify-content-center pb-126">
                 <div class="input_box  mt-46 w-100 ">
-                    <div class="d-flex flex-wrap  justify-content-center   justify-content-sm-between">
+                    <div class="d-flex flex-wrap   justify-content-between   justify_content_center">
                         <input type="text" placeholder="Enter your email here"
                             class="jakar-f fw-400 fs-16 line-27 white op-80 input_padding"
                             style="outline: none; list-style: none; background: transparent; border: 0;">
-                        <button class="jakar-f fw-600 fs-16 line-27 white btn_3">Sign up now</button>
+                        <button class="jakar-f mb_10 fw-600 fs-16 line-27 white btn_3 z-3 ">Sign up now</button>
                     </div>
                 </div>
             </div>
@@ -687,11 +723,12 @@
                     <p class="para_any op-60 white pt-19 jakar-f fw-400 fs-14 line-21 mb-0">Any system that works with
                         API can be connected via APIcenter.</p>
                     <div class="d-flex gap-10 pt-36">
-                        <a href="https://www.facebook.com/" target="_blank"> <img class="cursor transition_1" src="./assets/image/facebook.png"
-                                alt="facebook"></a>
-                        <a href="https://www.instagram.com/" target="_blank"> <img class="cursor transition_1" src="./assets/image/instagrsm.png"
-                                alt="instagrsm"></a>
-                        <a href="https://twitter.com/?lang=en" target="_blank"> <img class="cursor transition_1" src="./assets/image/twitter.png" alt="twitter"></a>
+                        <a href="https://www.facebook.com/" target="_blank"> <img class="cursor transition_1"
+                                src="./assets/image/facebook.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/" target="_blank"> <img class="cursor transition_1"
+                                src="./assets/image/instagrsm.png" alt="instagrsm"></a>
+                        <a href="https://twitter.com/?lang=en" target="_blank"> <img class="cursor transition_1"
+                                src="./assets/image/twitter.png" alt="twitter"></a>
                     </div>
                 </div>
                 <div class="col-xxl-9 col-xl-10">
@@ -812,7 +849,7 @@
     </footer>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
-    <img src="./assets/image/svg/top-arrow.svg" alt="svg"></button>
+        <img src="./assets/image/svg/top-arrow.svg" alt="svg"></button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
