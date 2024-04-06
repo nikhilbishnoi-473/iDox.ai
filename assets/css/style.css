@@ -109,6 +109,9 @@
     box-shadow: 0px 0px 20px 0px var(--white);
     transform: scale(1.1);
 }
+.max-w-1170{
+    max-width: 1170px;
+}
 .max-w-1350 {
     max-width: 1350px;
 }
@@ -264,6 +267,7 @@
     border-radius: 40px;
     background: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58) -14.36%, #0069E3 113.71%);
     border: 0;
+    transition: all 400ms linear;
 }
 
 .btn_3:hover{
@@ -452,6 +456,7 @@
 
 .small_box_2 {
     max-width: 400px;
+
     border-radius: 10px;
     padding: 13.87px 0px 13.87px 16px;
     background: var(--position-box);
@@ -855,6 +860,7 @@
 
 .hover_effect {
     transition: all 300ms linear;
+    cursor: pointer;
 }
 
 .hover_effect:hover {
@@ -922,8 +928,8 @@
     max-width: 507px;
 }
 
-.pt-93 {
-    padding-top: 93px;
+.pt-60 {
+    padding-top: 60px;
 }
 
 .pb-19 {
@@ -1153,7 +1159,7 @@
 }
 .ellips_4{
     right: 0;
-    bottom: -10%;
+    bottom: 0%;
 }
 .ellips_5{
     top: -1%;
@@ -1175,9 +1181,13 @@
     top: -16%;
     left: 0;    
 }
+.ellips_12{
+    top: 0%;
+    left: -2%;
+}
  .ellip_10{
     left: 35%;
-    top: -16%;
+    top: -30%;
  }
  .elips_11{
     left: 0%;
@@ -1441,6 +1451,9 @@
         padding: 20px;
         max-width: 570px !important;
     } 
+    .mt-87{
+        margin-top: 40px;
+    }
  
 }
 
@@ -1465,6 +1478,10 @@
         padding: 10px;
         max-width: 400px !important;
     } 
+    
+.hover_effect:hover {
+    box-shadow: none;
+}
  
 }
 @media (max-width: 410px) {
@@ -1472,10 +1489,11 @@
         padding: 10px;
         max-width: 310px !important;
     } 
-  .mb_10{
-    margin-bottom: 10px;
+  .my_10{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
   }
   .justify_content_center{
-    justify-content: center;
+    justify-content: center  !important;
   }
 }
