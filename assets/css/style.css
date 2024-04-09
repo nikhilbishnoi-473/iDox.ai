@@ -11,7 +11,88 @@
     text-decoration: none !important;
     /* outline: 1px solid red !important; */
 }
+/* accordion */
 
+
+.accordion-button::after {
+    display: none;
+}
+
+.svg_box {
+    display: block;
+}
+
+
+.accordion-button {
+    padding: 22px 15px;
+    width: 100%;
+    border-radius: 10px;
+    background: var(--white);
+    transition: all 300ms linear;
+}
+
+.accordion {
+    --bs-accordion-color: none !important;
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-color: none;
+    --bs-accordion-border-width: none;
+    --bs-accordion-border-radius: none;
+    transition: all 300ms linear;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--box-small);
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+
+    .svg_box {
+        display: none;
+    }
+}
+
+.accordion-body {
+    padding: 0;
+}
+
+.accordion-button:not(.collapsed)[type=button]:not(:disabled) {
+    .small_box {
+        display: block !important;
+    }
+
+    .accordion-para {
+        display: block;
+    }
+
+    .accordion-title {
+        color: var(--blue-1);
+    }
+}
+
+.small_box {
+    display: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button.collapsed {
+    padding: 23px;
+    width: 100%;
+    border-radius: 10px;
+    background: var(--box-small);
+
+}
+
+.accordion-para {
+    display: none;
+}
+.max_width_acc{
+    max-width: 370px;
+}
+.gap_22{
+    gap: 22px;
+}
 /* preloaded */
 .loading-overlay {
     position: fixed;
@@ -263,12 +344,12 @@
 
 .input_box {
     max-width: 520px;
-    border-radius: 20px;
+    border-radius: 29px;
     background: var(--input-bg);
 }
 
 .input_padding {
-    padding: 14px 0px 13px 33px;
+    padding: 14px 0 13px 33px;
 }
 
 .btn_3 {
@@ -417,6 +498,7 @@
 
 .small_box {
     width: 64px;
+    padding: 16px;
     height: 64px;
     border-radius: 8px;
     background: var(--small-box);
@@ -561,7 +643,7 @@
     transform: scale(1);
     box-shadow: 0px 4px 32px 0px var(--shadow-color);
 }
- 
+
 
 .pt-77 {
     padding-top: 77px;
@@ -709,12 +791,13 @@
     background: linear-gradient(99.45deg, #0389FF 0%, #0069E3 100%);
     border: 0;
 }
+
 .btn_add:hover {
-     
+
     transform: scale(1.1);
     box-shadow: 0px 4px 32px 0px var(--shadow-color);
 }
- 
+
 
 .pt-10 {
     padding-top: 10px;
@@ -871,8 +954,10 @@
     padding-top: 174px;
 }
 
-.padding_google {
-    padding: 58.32px 0px 38.27px 0px;
+
+
+.height_box {
+    min-height: 170px;
 }
 
 .hover_effect {
@@ -882,42 +967,18 @@
 
 .hover_effect:hover {
     box-shadow: 0px 0px 10px 0px var(--white);
-    .trasition_scale{
+
+    .trasition_scale {
         transform: scale(1.1);
     }
 }
-.trasition_scale{
+
+.trasition_scale {
     transition: all 400ms linear;
 }
- 
 
-.padding_drop {
-    padding: 61.7px 0px 70.52px 0px;
-}
 
-.padding_box {
-    padding: 47.94px 0px 55.63px 0px;
-}
 
-.padding_net {
-    padding: 44.02px 0px 63.67px 0px;
-}
-
-.padding_5 {
-    padding: 66.13px 0px 63.94px 0px;
-}
-
-.padding_6 {
-    padding: 59.13px 0px 32.64px 0px;
-}
-
-.padding_7 {
-    padding: 64.06px 0px 65.88px 0px;
-}
-
-.padding_8 {
-    padding: 64.04px 0px 65.88px 0px;
-}
 
 .border_r {
     border-right: 1px solid var(--border-img);
@@ -1319,7 +1380,7 @@
     }
 
     .cross span:nth-child(3) {
-        transform: rotate(-43deg) translateY(-15px);
+        transform: rotate(-43deg) translateY(-17px);
         transition: 300ms linear;
     }
 
@@ -1521,7 +1582,7 @@
 @media (max-width: 1200px) {
     .pt-110 {
         padding-top: 30px;
-        ;
+
     }
 }
 
@@ -1535,6 +1596,17 @@
         box-shadow: none;
     }
 
+    .height_box {
+        height: 100px;
+    }
+
+    .my_10 {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        margin-left: 10px;
+    }
+
+
 }
 
 @media (max-width: 410px) {
@@ -1543,12 +1615,14 @@
         max-width: 310px !important;
     }
 
-    .my_10 {
-        margin-top: 10px !important;
-        margin-bottom: 10px !important;
-    }
 
     .justify_content_center {
         justify-content: center !important;
+    }
+}
+@media (min-width: 1400px) {
+    .text_nowrap{
+     
+      text-wrap: nowrap;
     }
 }
